@@ -10,7 +10,6 @@ class CartProductCard extends StatelessWidget {
   final String initialQuantity;
   final String imagePath;
 
-  const CartProductCard({super.key, this.productName = 'Nama Produk', this.productDescription = 'Deskripsi Singkat', this.productPrice = 'Rp12.000.000', this.initialQuantity = '1'});
   const CartProductCard({
     super.key,
     this.productName = 'Nama Produk',
@@ -39,7 +38,6 @@ class CartProductCard extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
             // Widget Image: Digunakan untuk menampilkan gambar produk dari folder assets
-            child: Image.asset('assets/product.png', width: 100, height: 100, fit: BoxFit.cover),
             child: Image.asset(imagePath, width: 100, height: 100, fit: BoxFit.cover),
           ),
 
